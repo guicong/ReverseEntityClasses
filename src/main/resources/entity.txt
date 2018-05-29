@@ -1,0 +1,23 @@
+package com.cong.entity;
+
+import java.sql.Timestamp;
+import java.util.Date;
+import lombok.Data;
+
+/**
+ * @description TODO
+ * @author guicong
+ * @veriosn 1.0
+ * @date 2017-11-7
+ */
+@Data
+public class ${className} {
+
+	<#list nameList as names>
+	/**
+	 * ${names.comment}
+	 */
+	 private ${names.columnType} ${names.columnName};
+	</#list>
+	
+}
